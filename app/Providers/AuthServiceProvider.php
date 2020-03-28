@@ -36,13 +36,26 @@ class AuthServiceProvider extends ServiceProvider
             }*/
             
             //TEST ONLY
-            if($request->input('name') == 'testman'){
+            /*if($request->input('name') == 'testman'){
                 $usr = new User();
                 $usr->name = "testman";
                 
                 return $usr;
                 //return User::where('name', 'testman')->first();
-            }
+            }*/
+
+            /*$username = $request->input('name');
+            $pwd = "";
+
+            $user = User::where('name', $username)->first();
+
+            if($user){
+
+                return $user;
+
+            }*/
+
+            //TODO: ELABORATE JWT
 
             return null;
         });

@@ -20,6 +20,8 @@ class ExampleController extends Controller
 
     public function testlogin(Request $request){
 
+        //var_dump($request);
+
         if(Auth::user()->name == "testman"){
 
             return "Ok";
