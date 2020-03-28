@@ -16,3 +16,5 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/ttt', 'ExampleController@testlogin');
+$router->get('/generatejwt', 'ExampleController@generatejwt');
+$router->get('/testjwt', 'ExampleController@testjwt');

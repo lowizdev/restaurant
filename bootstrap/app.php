@@ -80,6 +80,10 @@ $app->routeMiddleware([
     'auth' => App\Http\Middleware\Authenticate::class,
 ]);
 
+$app->routeMiddleware([
+    'jwt' => App\Http\Middleware\JWTMiddleware::class,
+]);
+
 /*
 |--------------------------------------------------------------------------
 | Register Service Providers
